@@ -1,49 +1,25 @@
 {
-  "name": "sample-app-angularjs",
-  "description": "Sample app for UI-Router for AngularJS",
-  "version": "1.0.2",
+  "name": "angular",
+  "version": "1.8.3",
+  "description": "HTML enhanced for web apps",
+  "main": "index.js",
   "scripts": {
-    "clean": "shx rm -rf _bundles transpiled",
-    "start": "webpack-dev-server --progress --open",
-    "build": "webpack",
-    "test": "npm run build && cypress-runner run --path .",
-    "test:open": "npm run build && cypress-runner open --path .",
-    "e2e": "npm run test",
-    "gh-pages": "git checkout gh-pages && git rebase master && yarn && webpack && git add -f _bundles && git commit -m 'publish gh-pages' && git push origin gh-pages:gh-pages --force && git checkout master"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "contributors": [
-    {
-      "name": "Chris Thielen",
-      "web": "https://github.com/christopherthielen"
-    }
-  ],
-  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ui-router/sample-app-angularjs.git"
+    "url": "https://github.com/angular/angular.js.git"
   },
-  "checkPeerDependencies": {
-    "ignore": [
-      "ajv"
-    ]
+  "keywords": [
+    "angular",
+    "framework",
+    "browser",
+    "client-side"
+  ],
+  "author": "Angular Core Team <angular-core+npm@google.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angular/angular.js/issues"
   },
-  "dependencies": {
-    "@uirouter/angularjs": "^1.0.29",
-    "@uirouter/dsr": "^1.2.0",
-    "@uirouter/sticky-states": "^1.5.1",
-    "@uirouter/visualizer": "^7.2.1",
-    "angular": "^1.8.2",
-    "oclazyload": "^1.1.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.21.4",
-    "@babel/preset-env": "^7.14.9",
-    "@uirouter/cypress-runner": "^3.0.0",
-    "babel-loader": "^9.1.2",
-    "shx": "^0.3.4",
-    "source-map-loader": "^4.0.1",
-    "webpack": "^5.77.0",
-    "webpack-cli": "^5.0.1",
-    "webpack-dev-server": "^4.13.2"
-  }
+  "homepage": "http://angularjs.org"
 }
